@@ -8,7 +8,7 @@
   <!--Definition of a configSection, the second argument of the IOC lvDCOMConfigure() command -->
   <section name="frontpanel">
     <!--TODO: edit path attribute in <vi /> to contain a full absolute path, you can also use any EPICS macro known to the IOC e.g. $(TOP) or $(LVDCOM)-->
-    <vi path="VNA-FMR-POLREF.vi">
+    <vi path="C:/Instrument/Apps/EPICS/ISIS/FMR/master/FMRApp/protocol/VNA-FMR-POLREF.vi">
       <!--The <param /> maps an asyn driver parameter "name" (referenced in the EPICS .db) to the LabVIEW item "target" -->
       <!-- -->      
       <!-- -->
@@ -30,8 +30,8 @@
         <read method="GCV" target="Millisecond timer"/>
         <set method="SCV" extint="false" target="Millisecond timer"/>
       </param>
-      <param name="Actual_Current_Level__A__" type="float64">
-        <read method="GCV" target="Actual Current Level (A) "/>
+      <param name="Actual_Current_Level__A_" type="float64">
+        <read method="GCV" target="Actual Current Level (A)"/>
       </param>
       <param name="Current_Difference" type="float64">
         <read method="GCV" target="Current Difference"/>
@@ -45,8 +45,8 @@
       <!-- -->
       <!--Hall Probe Controls and Indicators-->
       <!-- -->
-      <param name="Current_value_" type="float64">
-        <read method="GCV" target="Current value "/>
+      <param name="Current_value" type="float64">
+        <read method="GCV" target="Current value"/>
       </param>
       <param name="Range_4" type="float64">
         <read method="GCV" target="Range 4"/>
@@ -59,9 +59,6 @@
       </param>
       <param name="Units_5" type="string">
         <read method="GCV" target="Units 5"/>
-      </param>
-      <param name="Formatted_value_" type="float64">
-        <read method="GCV" target="Formatted value "/>
       </param>
       <!-- -->
       <!--Vector Network Analyser Controls and Indicators-->
@@ -78,41 +75,41 @@
         <read method="GCV" target="Start Frequency (300.0e3) "/>
         <set method="SCV" extint="false" target="Start Frequency (300.0e3) "/>
       </param>
-      <param name="Stop_Frequency_" type="float64">
+      <param name="Stop_Frequency" type="float64">
         <read method="GCV" target="Stop Frequency "/>
-        <set method="SCV" extint="false" target="Stop Frequency "/>
+        <set method="SCV" extint="false" target="Stop Frequency"/>
       </param>
       <param name="Number_Of_Points__201__2" type="float64">
         <read method="GCV" target="Number Of Points (201) 2"/>
         <set method="SCV" extint="false" target="Number Of Points (201) 2"/>
       </param>
-      <param name="In_Port_" type="float64">
+      <param name="In_Port" type="float64">
         <read method="GCV" target="In Port "/>
-        <set method="SCV" extint="false" target="In Port "/>
+        <set method="SCV" extint="false" target="In Port"/>
       </param>
-      <param name="Out_Port_" type="float64">
+      <param name="Out_Port" type="float64">
         <read method="GCV" target="Out Port "/>
-        <set method="SCV" extint="false" target="Out Port "/>
+        <set method="SCV" extint="false" target="Out Port"/>
       </param>
-      <param name="Sweep_Time__21.909e-3__" type="float64">
+      <param name="Sweep_Time__21.909e-3" type="float64">
         <read method="GCV" target="Sweep Time (21.909e-3) "/>
-        <set method="SCV" extint="false" target="Sweep Time (21.909e-3) "/>
+        <set method="SCV" extint="false" target="Sweep Time (21.909e-3)"/>
       </param>
-      <param name="Auto_Sweep_Time_" type="boolean">
+      <param name="Auto_Sweep_Time" type="boolean">
         <items>
           <item name="OFF" value="0"/>
           <item name="ON" value="1"/>
         </items>
-        <read method="GCV" target="Auto Sweep Time "/>
-        <set method="SCV" extint="false" target="Auto Sweep Time "/>
+        <read method="GCV" target="Auto Sweep Time"/>
+        <set method="SCV" extint="false" target="Auto Sweep Time"/>
       </param>
       <param name="Milliseconds_to_wait" type="float64">
         <read method="GCV" target="Milliseconds to wait"/>
         <set method="SCV" extint="false" target="Milliseconds to wait"/>
       </param>
-      <param name="Bandwidth__10.0e3__" type="float64">
-        <read method="GCV" target="Bandwidth (10.0e3) "/>
-        <set method="SCV" extint="false" target="Bandwidth (10.0e3) "/>
+      <param name="Bandwidth__10.0e3_" type="float64">
+        <read method="GCV" target="Bandwidth (10.0e3)"/>
+        <set method="SCV" extint="false" target="Bandwidth (10.0e3)"/>
       </param>
       <param name="Power__-10.0__2" type="float64">
         <read method="GCV" target="Power (-10.0) 2"/>
