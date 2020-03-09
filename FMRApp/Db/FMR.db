@@ -82,7 +82,7 @@ alias("$(P)PSU:BA:POINTS:SP", "$(P)PSU:BA:POINTS:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Millisecond timer" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:DELAY:RBV")
+record(ai, "$(P)PSU:TIMER:RBV")
 {
 	field(DESC, "LabVIEW 'Millisecond timer'")
     field(DTYP, "asynFloat64")
@@ -92,7 +92,7 @@ record(ai, "$(P)PSU:DELAY:RBV")
 }
 
 # Write to LabVIEW control "Millisecond timer" on "VNA-FMR-POLREF.vi"
-record(ao, "$(P)PSU:DELAY:SP")
+record(ao, "$(P)PSU:TIMER:SP")
 {
 	field(DESC, "LabVIEW 'Millisecond timer'")
     field(DTYP, "asynFloat64")
@@ -100,7 +100,7 @@ record(ao, "$(P)PSU:DELAY:SP")
     field(PREC, "3")
 }
 
-alias("$(P)PSU:DELAY:SP", "$(P)PSU:DELAY:SP:RBV")
+alias("$(P)PSU:TIMER:SP", "$(P)PSU:TIMER:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Actual Current Level (A) " on "VNA-FMR-POLREF.vi"
@@ -379,7 +379,7 @@ alias("$(P)VNA:SWEEP:TIME:AUTO:SP", "$(P)VNA:SWEEP:TIME:AUTO:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Milliseconds to wait" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:DELAY:RBV")
+record(ai, "$(P)VNA:WAIT:RBV")
 {
 	field(DESC, "LabVIEW 'Milliseconds to wait'")
     field(DTYP, "asynFloat64")
@@ -389,7 +389,7 @@ record(ai, "$(P)VNA:DELAY:RBV")
 }
 
 # Write to LabVIEW control "Milliseconds to wait" on "VNA-FMR-POLREF.vi"
-record(ao, "$(P)VNA:DELAY:SP")
+record(ao, "$(P)VNA:WAIT:SP")
 {
 	field(DESC, "LabVIEW 'Milliseconds to wait'")
     field(DTYP, "asynFloat64")
@@ -397,7 +397,7 @@ record(ao, "$(P)VNA:DELAY:SP")
     field(PREC, "3")
 }
 
-alias("$(P)VNA:DELAY:SP", "$(P)VNA:DELAY:SP:RBV")
+alias("$(P)VNA:WAIT:SP", "$(P)VNA:WAIT:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Bandwidth (10.0e3) " on "VNA-FMR-POLREF.vi"

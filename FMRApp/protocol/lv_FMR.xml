@@ -8,7 +8,7 @@
   <!--Definition of a configSection, the second argument of the IOC lvDCOMConfigure() command -->
   <section name="frontpanel">
     <!--TODO: edit path attribute in <vi /> to contain a full absolute path, you can also use any EPICS macro known to the IOC e.g. $(TOP) or $(LVDCOM)-->
-    <vi path="C:/Instrument/Apps/EPICS/ISIS/FMR/master/FMRApp/protocol/VNA-FMR-POLREF.vi">
+    <vi path="C:/Temp/VNA-FMR-POLREF/VNA-FMR-POLREF.vi">
       <!--The <param /> maps an asyn driver parameter "name" (referenced in the EPICS .db) to the LabVIEW item "target" -->
       <!-- -->      
       <!-- -->
