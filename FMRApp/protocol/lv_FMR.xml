@@ -8,7 +8,7 @@
   <!--Definition of a configSection, the second argument of the IOC lvDCOMConfigure() command -->
   <section name="frontpanel">
     <!--TODO: edit path attribute in <vi /> to contain a full absolute path, you can also use any EPICS macro known to the IOC e.g. $(TOP) or $(LVDCOM)-->
-    <vi path="C:/Temp/VNA-FMR-POLREF/VNA-FMR-POLREF.vi">
+    <vi path="C:/Users/wil0322903/Desktop/VNA-FMR/VNA-FMR-POLREF.vi">
       <!--The <param /> maps an asyn driver parameter "name" (referenced in the EPICS .db) to the LabVIEW item "target" -->
       <!-- -->      
       <!-- -->
@@ -71,29 +71,29 @@
         <read method="GCV" target="RF State (T) 2"/>
         <set method="SCV" extint="false" target="RF State (T) 2"/>
       </param>
-      <param name="Start_Frequency__300.0e3__" type="float64">
-        <read method="GCV" target="Start Frequency (300.0e3) "/>
-        <set method="SCV" extint="false" target="Start Frequency (300.0e3) "/>
+      <param name="Start_Frequency" type="float64">
+        <read method="GCV" target="Start Frequency"/>
+        <set method="SCV" extint="false" target="Start Frequency"/>
       </param>
       <param name="Stop_Frequency" type="float64">
         <read method="GCV" target="Stop Frequency "/>
         <set method="SCV" extint="false" target="Stop Frequency"/>
       </param>
-      <param name="Number_Of_Points__201__2" type="float64">
-        <read method="GCV" target="Number Of Points (201) 2"/>
-        <set method="SCV" extint="false" target="Number Of Points (201) 2"/>
+      <param name="Number_Of_Points" type="float64">
+        <read method="GCV" target="Number Of Points"/>
+        <set method="SCV" extint="false" target="Number Of Points"/>
       </param>
       <param name="In_Port" type="float64">
         <read method="GCV" target="In Port "/>
         <set method="SCV" extint="false" target="In Port"/>
       </param>
       <param name="Out_Port" type="float64">
-        <read method="GCV" target="Out Port "/>
+        <read method="GCV" target="Out Port"/>
         <set method="SCV" extint="false" target="Out Port"/>
       </param>
-      <param name="Sweep_Time__21.909e-3" type="float64">
-        <read method="GCV" target="Sweep Time (21.909e-3) "/>
-        <set method="SCV" extint="false" target="Sweep Time (21.909e-3)"/>
+      <param name="Sweep_Time" type="float64">
+        <read method="GCV" target="Sweep Time"/>
+        <set method="SCV" extint="false" target="Sweep Time"/>
       </param>
       <param name="Auto_Sweep_Time" type="boolean">
         <items>
@@ -107,13 +107,31 @@
         <read method="GCV" target="Milliseconds to wait"/>
         <set method="SCV" extint="false" target="Milliseconds to wait"/>
       </param>
-      <param name="Bandwidth__10.0e3_" type="float64">
-        <read method="GCV" target="Bandwidth (10.0e3)"/>
-        <set method="SCV" extint="false" target="Bandwidth (10.0e3)"/>
+      <param name="Bandwidth" type="float64">
+        <read method="GCV" target="Bandwidth"/>
+        <set method="SCV" extint="false" target="Bandwidth"/>
       </param>
-      <param name="Power__-10.0__2" type="float64">
-        <read method="GCV" target="Power (-10.0) 2"/>
-        <set method="SCV" extint="false" target="Power (-10.0) 2"/>
+      <param name="Power" type="float64">
+        <read method="GCV" target="Power"/>
+        <set method="SCV" extint="false" target="Power"/>
+      </param>
+      <!-- -->
+      <!--Overall VI Controls and Indicators-->
+      <!-- -->
+      <param name="Run" type="boolean">
+        <items>
+          <item name="OFF" value="0"/>
+          <item name="ON" value="1"/>
+        </items>
+        <read method="GCV" target="Run"/>
+        <set method="SCV" extint="false" target="Run"/>
+      </param>
+      <param name="Activity" type="boolean">
+        <items>
+          <item name="OFF" value="0"/>
+          <item name="ON" value="1"/>
+        </items>
+        <read method="GCV" target="Activity"/>
       </param>
     </vi>
   </section>

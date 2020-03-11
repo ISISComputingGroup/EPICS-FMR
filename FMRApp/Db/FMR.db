@@ -222,29 +222,29 @@ record(bo, "$(P)VNA:STATE:SP")
 alias("$(P)VNA:STATE:SP", "$(P)VNA:STATE:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Start Frequency (300.0e3) " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Start Frequency" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:FREQ:START:RBV")
 {
-	field(DESC, "LabVIEW 'Start Frequency (300.0e3)'")
+	field(DESC, "LabVIEW 'Start Frequency'")
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(lvfp,0,0)Start_Frequency__300.0e3_")
+    field(INP,  "@asyn(lvfp,0,0)Start_Frequency")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Start Frequency (300.0e3) " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Start Frequency" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:FREQ:START:SP")
 {
-	field(DESC, "LabVIEW 'Start Frequency (300.0e3)'")
+	field(DESC, "LabVIEW 'Start Frequency'")
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(lvfp,0,0)Start_Frequency__300.0e3_")
+    field(OUT,  "@asyn(lvfp,0,0)Start_Frequency")
     field(PREC, "3")
 }
 
 alias("$(P)VNA:FREQ:START:SP", "$(P)VNA:FREQ:START:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Stop Frequency " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Stop Frequency" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:FREQ:STOP:RBV")
 {
 	field(DESC, "LabVIEW 'Stop Frequency'")
@@ -254,7 +254,7 @@ record(ai, "$(P)VNA:FREQ:STOP:RBV")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Stop Frequency " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Stop Frequency" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:FREQ:STOP:SP")
 {
 	field(DESC, "LabVIEW 'Stop Frequency'")
@@ -266,29 +266,29 @@ record(ao, "$(P)VNA:FREQ:STOP:SP")
 alias("$(P)VNA:FREQ:STOP:SP", "$(P)VNA:FREQ:STOP:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Number Of Points (201) 2" on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Number Of Points" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:FREQ:POINTS:RBV")
 {
-	field(DESC, "LabVIEW 'Number Of Points (201) 2'")
+	field(DESC, "LabVIEW 'Number Of Points'")
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(lvfp,0,0)Number_Of_Points__201__2")
+    field(INP,  "@asyn(lvfp,0,0)Number_Of_Points")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Number Of Points (201) 2" on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Number Of Points" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:FREQ:POINTS:SP")
 {
-	field(DESC, "LabVIEW 'Number Of Points (201) 2'")
+	field(DESC, "LabVIEW 'Number Of Points'")
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(lvfp,0,0)Number_Of_Points__201__2")
+    field(OUT,  "@asyn(lvfp,0,0)Number_Of_Points")
     field(PREC, "3")
 }
 
 alias("$(P)VNA:FREQ:POINTS:SP", "$(P)VNA:FREQ:POINTS:SP:RBV")
 
 
-# Read LabVIEW control/indicator "In Port " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "In Port" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:PORT:IN:RBV")
 {
 	field(DESC, "LabVIEW 'In Port'")
@@ -298,7 +298,7 @@ record(ai, "$(P)VNA:PORT:IN:RBV")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "In Port " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "In Port" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:PORT:IN:SP")
 {
 	field(DESC, "LabVIEW 'In Port'")
@@ -310,7 +310,7 @@ record(ao, "$(P)VNA:PORT:IN:SP")
 alias("$(P)VNA:PORT:IN:SP", "$(P)VNA:PORT:IN:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Out Port " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Out Port" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:PORT:OUT:RBV")
 {
 	field(DESC, "LabVIEW 'Out Port'")
@@ -320,7 +320,7 @@ record(ai, "$(P)VNA:PORT:OUT:RBV")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Out Port " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Out Port" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:PORT:OUT:SP")
 {
 	field(DESC, "LabVIEW 'Out Port'")
@@ -332,29 +332,29 @@ record(ao, "$(P)VNA:PORT:OUT:SP")
 alias("$(P)VNA:PORT:OUT:SP", "$(P)VNA:PORT:OUT:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Sweep Time (21.909e-3) " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Sweep Time" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:SWEEP:TIME:RBV")
 {
-	field(DESC, "LabVIEW 'Sweep Time (21.909e-3)'")
+	field(DESC, "LabVIEW 'Sweep Time'")
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(lvfp,0,0)Sweep_Time__21.909e-3_")
+    field(INP,  "@asyn(lvfp,0,0)Sweep_Time")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Sweep Time (21.909e-3) " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Sweep Time" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:SWEEP:TIME:SP")
 {
-	field(DESC, "LabVIEW 'Sweep Time (21.909e-3)'")
+	field(DESC, "LabVIEW 'Sweep Time'")
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(lvfp,0,0)Sweep_Time__21.909e-3_")
+    field(OUT,  "@asyn(lvfp,0,0)Sweep_Time")
     field(PREC, "3")
 }
 
 alias("$(P)VNA:SWEEP:TIME:SP", "$(P)VNA:SWEEP:TIME:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Auto Sweep Time " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Auto Sweep Time" on "VNA-FMR-POLREF.vi"
 record(bi, "$(P)VNA:SWEEP:TIME:AUTO:RBV")
 {
 	field(DESC, "LabVIEW 'Auto Sweep Time'")
@@ -365,7 +365,7 @@ record(bi, "$(P)VNA:SWEEP:TIME:AUTO:RBV")
     field(ONAM, "ON")
 }
 
-# Write to LabVIEW control "Auto Sweep Time " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Auto Sweep Time" on "VNA-FMR-POLREF.vi"
 record(bo, "$(P)VNA:SWEEP:TIME:AUTO:SP")
 {
 	field(DESC, "LabVIEW 'Auto Sweep Time'")
@@ -400,45 +400,84 @@ record(ao, "$(P)VNA:WAIT:SP")
 alias("$(P)VNA:WAIT:SP", "$(P)VNA:WAIT:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Bandwidth (10.0e3) " on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Bandwidth" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:BANDWIDTH:RBV")
 {
-	field(DESC, "LabVIEW 'Bandwidth (10.0e3)'")
+	field(DESC, "LabVIEW 'Bandwidth'")
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(lvfp,0,0)Bandwidth__10.0e3_")
+    field(INP,  "@asyn(lvfp,0,0)Bandwidth")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Bandwidth (10.0e3) " on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Bandwidth" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:BANDWIDTH:SP")
 {
-	field(DESC, "LabVIEW 'Bandwidth (10.0e3)'")
+	field(DESC, "LabVIEW 'Bandwidth'")
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(lvfp,0,0)Bandwidth__10.0e3_")
+    field(OUT,  "@asyn(lvfp,0,0)Bandwidth")
     field(PREC, "3")
 }
 
 alias("$(P)VNA:BANDWIDTH:SP", "$(P)VNA:BANDWIDTH:SP:RBV")
 
 
-# Read LabVIEW control/indicator "Power (-10.0) 2" on "VNA-FMR-POLREF.vi"
+# Read LabVIEW control/indicator "Power" on "VNA-FMR-POLREF.vi"
 record(ai, "$(P)VNA:POWER:RBV")
 {
-	field(DESC, "LabVIEW 'Power (-10.0) 2'")
+	field(DESC, "LabVIEW 'Power'")
     field(DTYP, "asynFloat64")
-    field(INP,  "@asyn(lvfp,0,0)Power__-10.0__2")
+    field(INP,  "@asyn(lvfp,0,0)Power")
     field(PREC, "3")
     field(SCAN, ".1 second")
 }
 
-# Write to LabVIEW control "Power (-10.0) 2" on "VNA-FMR-POLREF.vi"
+# Write to LabVIEW control "Power" on "VNA-FMR-POLREF.vi"
 record(ao, "$(P)VNA:POWER:SP")
 {
-	field(DESC, "LabVIEW 'Power (-10.0) 2'")
+	field(DESC, "LabVIEW 'Power'")
     field(DTYP, "asynFloat64")
-    field(OUT,  "@asyn(lvfp,0,0)Power__-10.0__2")
+    field(OUT,  "@asyn(lvfp,0,0)Power")
     field(PREC, "3")
 }
 
 alias("$(P)VNA:POWER:SP", "$(P)VNA:POWER:SP:RBV")
+
+
+##############
+# VI records #
+##############
+
+# Read LabVIEW control/indicator "Run" on "VNA-FMR-POLREF.vi"
+record(bi, "$(P)FMR:RUN:RBV")
+{
+    field(DESC, "LabVIEW 'Run'")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn(lvfp,0,0)Run")
+    field(SCAN, ".1 second")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+}
+
+# Write to LabVIEW control "Run" on "VNA-FMR-POLREF.vi"
+record(bo, "$(P)FMR:RUN:SP")
+{
+    field(DESC, "LabVIEW 'Run'")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn(lvfp,0,0)Run")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+}
+
+alias("$(P)FMR:RUN:SP", "$(P)FMR:RUN:SP:RBV")
+
+# Read LabVIEW control/indicator "Activity" on "VNA-FMR-POLREF.vi"
+record(bi, "$(P)FMR:ACTIVITY:RBV")
+{
+    field(DESC, "LabVIEW 'Activity'")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn(lvfp,0,0)Activity")
+    field(SCAN, ".1 second")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+}
