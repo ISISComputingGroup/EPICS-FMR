@@ -16,7 +16,7 @@
 
     
 # Read LabVIEW control/indicator "Start Ba  (A)" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:BA:START:RBV")
+record(ai, "$(P)PSU:BA:START")
 {
 	field(DESC, "LabVIEW 'Start Ba  (A)'")
     field(DTYP, "asynFloat64")
@@ -38,7 +38,7 @@ alias("$(P)PSU:BA:START:SP", "$(P)PSU:BA:START:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Stop Ba  (A)" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:BA:STOP:RBV")
+record(ai, "$(P)PSU:BA:STOP")
 {
 	field(DESC, "LabVIEW 'Stop Ba  (A)'")
     field(DTYP, "asynFloat64")
@@ -60,7 +60,7 @@ alias("$(P)PSU:BA:STOP:SP", "$(P)PSU:BA:STOP:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Number of Ba Points" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:BA:POINTS:RBV")
+record(ai, "$(P)PSU:BA:POINTS")
 {
 	field(DESC, "LabVIEW 'Number of Ba Points'")
     field(DTYP, "asynFloat64")
@@ -82,7 +82,7 @@ alias("$(P)PSU:BA:POINTS:SP", "$(P)PSU:BA:POINTS:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Millisecond timer" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:TIMER:RBV")
+record(ai, "$(P)PSU:TIMER")
 {
 	field(DESC, "LabVIEW 'Millisecond timer'")
     field(DTYP, "asynFloat64")
@@ -104,7 +104,7 @@ alias("$(P)PSU:TIMER:SP", "$(P)PSU:TIMER:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Actual Current Level (A) " on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:CURR:RBV")
+record(ai, "$(P)PSU:CURR")
 {
 	field(DESC, "LabVIEW 'Actual Current Level (A)'")
     field(DTYP, "asynFloat64")
@@ -115,7 +115,7 @@ record(ai, "$(P)PSU:CURR:RBV")
 
 
 # Read LabVIEW control/indicator "Current Difference" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:CURR:DIFF:RBV")
+record(ai, "$(P)PSU:CURR:DIFF")
 {
 	field(DESC, "LabVIEW 'Current Difference'")
     field(DTYP, "asynFloat64")
@@ -126,7 +126,7 @@ record(ai, "$(P)PSU:CURR:DIFF:RBV")
 
 
 # Read LabVIEW control/indicator "Delay (ms)" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:DELAY:RBV")
+record(ai, "$(P)PSU:DELAY")
 {
 	field(DESC, "LabVIEW 'Delay (ms)'")
     field(DTYP, "asynFloat64")
@@ -137,7 +137,7 @@ record(ai, "$(P)PSU:DELAY:RBV")
 
 
 # Read LabVIEW control/indicator "Loop Number" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PSU:LOOP:RBV")
+record(ai, "$(P)PSU:LOOP")
 {
 	field(DESC, "LabVIEW 'Loop Number'")
     field(DTYP, "asynFloat64")
@@ -151,7 +151,7 @@ record(ai, "$(P)PSU:LOOP:RBV")
 ######################
 
 # Read LabVIEW control/indicator "Current value " on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PROBE:VALUE:RBV")
+record(ai, "$(P)PROBE:VALUE")
 {
 	field(DESC, "LabVIEW 'Current value'")
     field(DTYP, "asynFloat64")
@@ -162,7 +162,7 @@ record(ai, "$(P)PROBE:VALUE:RBV")
 
 
 # Read LabVIEW control/indicator "Range 4" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PROBE:RANGE:RBV")
+record(ai, "$(P)PROBE:RANGE")
 {
 	field(DESC, "LabVIEW 'Range 4'")
     field(DTYP, "asynFloat64")
@@ -173,7 +173,7 @@ record(ai, "$(P)PROBE:RANGE:RBV")
 
 
 # Read LabVIEW control/indicator "Mode 4" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)PROBE:MODE:RBV")
+record(ai, "$(P)PROBE:MODE")
 {
 	field(DESC, "LabVIEW 'Mode 4'")
     field(DTYP, "asynFloat64")
@@ -184,7 +184,7 @@ record(ai, "$(P)PROBE:MODE:RBV")
 
 
 # Read LabVIEW control/indicator "Units 5" on "VNA-FMR-POLREF.vi"
-record(stringin, "$(P)PROBE:UNITS:RBV")
+record(stringin, "$(P)PROBE:UNITS")
 {
 	field(DESC, "LabVIEW 'Units 5'")
     field(DTYP, "asynOctetRead")
@@ -199,7 +199,7 @@ record(stringin, "$(P)PROBE:UNITS:RBV")
 ###############
 
 # Read LabVIEW control/indicator "RF State (T) 2" on "VNA-FMR-POLREF.vi"
-record(bi, "$(P)VNA:STATE:RBV")
+record(bi, "$(P)VNA:STATE")
 {
 	field(DESC, "LabVIEW 'RF State (T) 2'")
     field(DTYP, "asynInt32")
@@ -223,7 +223,7 @@ alias("$(P)VNA:STATE:SP", "$(P)VNA:STATE:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Start Frequency" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:FREQ:START:RBV")
+record(ai, "$(P)VNA:FREQ:START")
 {
 	field(DESC, "LabVIEW 'Start Frequency'")
     field(DTYP, "asynFloat64")
@@ -245,7 +245,7 @@ alias("$(P)VNA:FREQ:START:SP", "$(P)VNA:FREQ:START:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Stop Frequency" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:FREQ:STOP:RBV")
+record(ai, "$(P)VNA:FREQ:STOP")
 {
 	field(DESC, "LabVIEW 'Stop Frequency'")
     field(DTYP, "asynFloat64")
@@ -267,7 +267,7 @@ alias("$(P)VNA:FREQ:STOP:SP", "$(P)VNA:FREQ:STOP:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Number Of Points" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:FREQ:POINTS:RBV")
+record(ai, "$(P)VNA:FREQ:POINTS")
 {
 	field(DESC, "LabVIEW 'Number Of Points'")
     field(DTYP, "asynFloat64")
@@ -289,7 +289,7 @@ alias("$(P)VNA:FREQ:POINTS:SP", "$(P)VNA:FREQ:POINTS:SP:RBV")
 
 
 # Read LabVIEW control/indicator "In Port" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:PORT:IN:RBV")
+record(ai, "$(P)VNA:PORT:IN")
 {
 	field(DESC, "LabVIEW 'In Port'")
     field(DTYP, "asynFloat64")
@@ -311,7 +311,7 @@ alias("$(P)VNA:PORT:IN:SP", "$(P)VNA:PORT:IN:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Out Port" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:PORT:OUT:RBV")
+record(ai, "$(P)VNA:PORT:OUT")
 {
 	field(DESC, "LabVIEW 'Out Port'")
     field(DTYP, "asynFloat64")
@@ -333,7 +333,7 @@ alias("$(P)VNA:PORT:OUT:SP", "$(P)VNA:PORT:OUT:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Sweep Time" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:SWEEP:TIME:RBV")
+record(ai, "$(P)VNA:SWEEP:TIME")
 {
 	field(DESC, "LabVIEW 'Sweep Time'")
     field(DTYP, "asynFloat64")
@@ -355,7 +355,7 @@ alias("$(P)VNA:SWEEP:TIME:SP", "$(P)VNA:SWEEP:TIME:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Auto Sweep Time" on "VNA-FMR-POLREF.vi"
-record(bi, "$(P)VNA:SWEEP:TIME:AUTO:RBV")
+record(bi, "$(P)VNA:SWEEP:TIME:AUTO")
 {
 	field(DESC, "LabVIEW 'Auto Sweep Time'")
     field(DTYP, "asynInt32")
@@ -379,7 +379,7 @@ alias("$(P)VNA:SWEEP:TIME:AUTO:SP", "$(P)VNA:SWEEP:TIME:AUTO:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Milliseconds to wait" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:WAIT:RBV")
+record(ai, "$(P)VNA:WAIT")
 {
 	field(DESC, "LabVIEW 'Milliseconds to wait'")
     field(DTYP, "asynFloat64")
@@ -401,7 +401,7 @@ alias("$(P)VNA:WAIT:SP", "$(P)VNA:WAIT:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Bandwidth" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:BANDWIDTH:RBV")
+record(ai, "$(P)VNA:BANDWIDTH")
 {
 	field(DESC, "LabVIEW 'Bandwidth'")
     field(DTYP, "asynFloat64")
@@ -423,7 +423,7 @@ alias("$(P)VNA:BANDWIDTH:SP", "$(P)VNA:BANDWIDTH:SP:RBV")
 
 
 # Read LabVIEW control/indicator "Power" on "VNA-FMR-POLREF.vi"
-record(ai, "$(P)VNA:POWER:RBV")
+record(ai, "$(P)VNA:POWER")
 {
 	field(DESC, "LabVIEW 'Power'")
     field(DTYP, "asynFloat64")
@@ -449,7 +449,7 @@ alias("$(P)VNA:POWER:SP", "$(P)VNA:POWER:SP:RBV")
 ##############
 
 # Read LabVIEW control/indicator "Run" on "VNA-FMR-POLREF.vi"
-record(bi, "$(P)FMR:RUN:RBV")
+record(bi, "$(P)FMR:RUN")
 {
     field(DESC, "LabVIEW 'Run'")
     field(DTYP, "asynInt32")
@@ -472,7 +472,7 @@ record(bo, "$(P)FMR:RUN:SP")
 alias("$(P)FMR:RUN:SP", "$(P)FMR:RUN:SP:RBV")
 
 # Read LabVIEW control/indicator "Activity" on "VNA-FMR-POLREF.vi"
-record(bi, "$(P)FMR:ACTIVITY:RBV")
+record(bi, "$(P)FMR:ACTIVITY")
 {
     field(DESC, "LabVIEW 'Activity'")
     field(DTYP, "asynInt32")
