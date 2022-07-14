@@ -1,0 +1,179 @@
+# 
+# Definitions from configSection "frontpanel" in XML input file
+#
+#     lvDCOMConfigure("lvfp", "frontpanel", "\protocol\lv_RSVNA.xml")
+# 
+
+###############
+# VNA records #
+###############
+
+# Read LabVIEW control/indicator "RF State (T)" on "RSVNA.vi"
+record(bi, "$(P)VNA:STATE")
+{
+	field(DESC, "LabVIEW 'RF State (T)'")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn(lvfp,0,0)RF_State__T_")
+    field(SCAN, ".1 second")
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "RF State (T)" on "RSVNA.vi"
+record(bo, "$(P)VNA:STATE:SP")
+{
+	field(DESC, "LabVIEW 'RF State (T)'")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn(lvfp,0,0)RF_State__T_")   
+    field(ZNAM, "OFF")
+    field(ONAM, "ON")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:STATE:SP", "$(P)VNA:STATE:SP:RBV")
+
+
+# Read LabVIEW control/indicator "Start Frequency" on "RSVNA.vi"
+record(ai, "$(P)VNA:FREQ:START")
+{
+	field(DESC, "LabVIEW 'Start Frequency'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Start_Frequency")
+    field(PREC, "3")
+    field(EGU, "Hz")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Start Frequency" on "RSVNA.vi"
+record(ao, "$(P)VNA:FREQ:START:SP")
+{
+	field(DESC, "LabVIEW 'Start Frequency'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Start_Frequency")
+    field(PREC, "3")
+    field(EGU, "Hz")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:FREQ:START:SP", "$(P)VNA:FREQ:START:SP:RBV")
+
+
+# Read LabVIEW control/indicator "Stop Frequency" on "RSVNA.vi"
+record(ai, "$(P)VNA:FREQ:STOP")
+{
+	field(DESC, "LabVIEW 'Stop Frequency'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Stop_Frequency")
+    field(PREC, "3")
+    field(EGU, "Hz")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Stop Frequency" on "RSVNA.vi"
+record(ao, "$(P)VNA:FREQ:STOP:SP")
+{
+	field(DESC, "LabVIEW 'Stop Frequency'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Stop_Frequency")
+    field(PREC, "3")
+    field(EGU, "Hz")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:FREQ:STOP:SP", "$(P)VNA:FREQ:STOP:SP:RBV")
+
+
+
+
+# Read LabVIEW control/indicator "In Port" on "RSVNA.vi"
+record(ai, "$(P)VNA:PORT:IN")
+{
+	field(DESC, "LabVIEW 'In Port'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)In_Port")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "In Port" on "RSVNA.vi"
+record(ao, "$(P)VNA:PORT:IN:SP")
+{
+	field(DESC, "LabVIEW 'In Port'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)In_Port")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:PORT:IN:SP", "$(P)VNA:PORT:IN:SP:RBV")
+
+
+# Read LabVIEW control/indicator "Out Port" on "RSVNA.vi"
+record(ai, "$(P)VNA:PORT:OUT")
+{
+	field(DESC, "LabVIEW 'Out Port'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Out_Port")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Out Port" on "RSVNA.vi"
+record(ao, "$(P)VNA:PORT:OUT:SP")
+{
+	field(DESC, "LabVIEW 'Out Port'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Out_Port")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:PORT:OUT:SP", "$(P)VNA:PORT:OUT:SP:RBV")
+
+
+# Read LabVIEW control/indicator "Power" on "RSVNA.vi"
+record(ai, "$(P)VNA:POWER")
+{
+	field(DESC, "LabVIEW 'Power'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Power")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Power" on "RSVNA.vi"
+record(ao, "$(P)VNA:POWER:SP")
+{
+	field(DESC, "LabVIEW 'Power'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Power")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:POWER:SP", "$(P)VNA:POWER:SP:RBV")
+
