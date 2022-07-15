@@ -40,6 +40,22 @@
         <read method="GCV" target="Power"/>
         <set method="SCV" extint="false" target="Power"/>
       </param>
+      <param name="Real_Array_Index" type="float64">
+        <read method="GCV" target="Real Array Index"/>
+        <set method="SCV" extint="false" target="Real Array Index"/>
+      </param>
+      <param name="Real_Element" type="float64">
+        <read method="GCV" target="Real Element"/>
+        <set method="SCV" extint="false" target="Real Element"/>
+      </param>
+      <param name="Imaginary_Array_Index" type="float64">
+        <read method="GCV" target="Imaginary Array Index"/>
+        <set method="SCV" extint="false" target="Imaginary Array Index"/>
+      </param>
+      <param name="Imaginary_Element" type="float64">
+        <read method="GCV" target="Imaginary Element"/>
+        <set method="SCV" extint="false" target="Imaginary Element"/>
+      </param>
     </vi>
   </section>
 </lvinput>
