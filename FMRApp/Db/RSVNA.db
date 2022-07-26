@@ -177,3 +177,111 @@ record(ao, "$(P)VNA:POWER:SP")
 
 alias("$(P)VNA:POWER:SP", "$(P)VNA:POWER:SP:RBV")
 
+# Read LabVIEW control/indicator "Real Array Index" on "RSVNA.vi"
+record(ai, "$(P)VNA:RAI")
+{
+	field(DESC, "LabVIEW 'Real Array Index'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Real_Array_Index")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Real Array Index" on "RSVNA.vi"
+record(ao, "$(P)VNA:RAI:SP")
+{
+	field(DESC, "LabVIEW 'Real Array Index'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Real_Array_Index")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:RAI:SP", "$(P)VNA:RAI:SP:RBV")
+
+# Read LabVIEW control/indicator "Real Element" on "RSVNA.vi"
+record(ai, "$(P)VNA:RE")
+{
+	field(DESC, "LabVIEW 'Real Element'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Real_Element")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Real Element" on "RSVNA.vi"
+record(ao, "$(P)VNA:RE:SP")
+{
+	field(DESC, "LabVIEW 'Real Element'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Real_Element")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:RE:SP", "$(P)VNA:RE:SP:RBV")
+
+# Read LabVIEW control/indicator "Imaginary Array Index" on "RSVNA.vi"
+record(ai, "$(P)VNA:IAI")
+{
+	field(DESC, "LabVIEW 'Imaginary Array Index'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Imaginary_Array_Index")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Imaginary Array Index" on "RSVNA.vi"
+record(ao, "$(P)VNA:IAI:SP")
+{
+	field(DESC, "LabVIEW 'Imaginary Array Index'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Imaginary_Array_Index")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:IAI:SP", "$(P)VNA:IAI:SP:RBV")
+
+# Read LabVIEW control/indicator "Imaginary Element" on "RSVNA.vi"
+record(ai, "$(P)VNA:IE")
+{
+	field(DESC, "LabVIEW 'Imaginary Element'")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn(lvfp,0,0)Imaginary_Element")
+    field(PREC, "3")
+    field(EGU, "")
+    field(SCAN, ".1 second")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+# Write to LabVIEW control "Imaginary Element" on "RSVNA.vi"
+record(ao, "$(P)VNA:IE:SP")
+{
+	field(DESC, "LabVIEW 'Imaginary Element'")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn(lvfp,0,0)Imaginary_Element")
+    field(PREC, "3")
+    field(EGU, "")
+    info(INTEREST, "HIGH")
+    info(archive, "VAL")
+}
+
+alias("$(P)VNA:IE:SP", "$(P)VNA:IE:SP:RBV")
+
